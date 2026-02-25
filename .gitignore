@@ -62,3 +62,6 @@ Thumbs.db
 # parcel-bundler
 .cache/
 .parcel-cache/
+
+# study
+study/
