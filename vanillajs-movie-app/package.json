@@ -12,9 +12,9 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node-fetch": "^2.6.13",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.6.1",
     "parcel": "^2.8.0",
-    "vercel": "^28.8.0"
+    "vercel": "^28.20.0"
   },
   "dependencies": {
     "-": "^0.0.1",
