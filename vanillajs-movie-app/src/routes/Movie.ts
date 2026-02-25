@@ -16,6 +16,7 @@ export default class Movie extends Component {
     // 영화 상세 정보 가져오기!
     await getMovieDetails(history.state.id)
     const { movie } = movieStore.state
+    if (!movie) return
     const bigPoster = movie.Poster.replace('SX300', 'SX700')
 
     // this.el.classList.add('container', 'the-movie')
@@ -40,9 +41,9 @@ export default class Movie extends Component {
         </div>
         <div>
           <h3>Ratings</h3>
-          ${movie.Ratings.map(rating => {
+          ${Array.isArray(movie.Ratings) ? movie.Ratings.map((rating: { Source: string; Value: string }) => {
             return `<p>${rating.Source} - ${rating.Value}</p>`
-          }).join('')}
+          }).join('') : ''}
         </div>
         <div>
           <h3>Actors</h3>
