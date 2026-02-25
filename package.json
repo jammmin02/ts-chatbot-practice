@@ -19,7 +19,8 @@
   "dependencies": {
     "-": "^0.0.1",
     "D": "^1.0.0",
-    "node-fetch": "^2.6.7",
+    "node-fetch": "^2.7.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "type": "module"
 }
